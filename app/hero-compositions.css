@@ -287,3 +287,25 @@
   .west-experience > .west-open h1 { left: 8vw; }
   .kt-experience > .kt-afternoon h1 { left: 8vw; }
 }
+
+/* Standalone place pages: keep the first three compositions readable in Chrome. */
+@media (min-width: 701px){
+  .central-experience > .central-arrival h1{
+    top:12vh!important;left:24vw!important;height:auto!important;max-height:74vh!important;
+    font-size:clamp(4.6rem,9vw,8.6rem)!important;line-height:.78!important;overflow:visible!important;
+  }
+  .central-experience > .central-arrival .central-feeling{top:31vh!important;left:55vw!important;max-width:24ch!important}
+  .central-experience > .central-arrival .central-line{right:10vw!important;bottom:14vh!important;max-width:18ch!important;font-size:clamp(1.35rem,2.4vw,2.7rem)!important}
+
+  .mong-kok-experience > .mk-overload{min-height:115svh!important;padding-top:12vh!important;padding-bottom:10vh!important}
+  .mong-kok-experience > .mk-overload .mk-fragments{height:78vh!important;margin-top:2vh!important}
+  .mong-kok-experience > .mk-overload .mk-fragment:nth-child(odd){font-size:clamp(1.6rem,4vw,4.4rem)!important;line-height:.82!important}
+  .mong-kok-experience > .mk-overload .mk-overload-copy{right:9vw!important;bottom:9vh!important;max-width:27ch!important;font-size:clamp(1.3rem,2.5vw,2.4rem)!important}
+  .mong-kok-experience > .mk-overload .mk-image{opacity:.25!important}
+}
+
+@media (min-width: 701px) and (max-height: 760px){
+  .central-experience > .central-arrival h1{font-size:clamp(4rem,8vw,7rem)!important}
+  .mong-kok-experience > .mk-overload .mk-fragments{height:72vh!important}
+  .mong-kok-experience > .mk-overload .mk-overload-copy{bottom:7vh!important}
+}

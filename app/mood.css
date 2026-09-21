@@ -535,7 +535,8 @@
   .book-shell .book-page-final .cluster-central{left:9%!important;top:10%!important;width:16%!important;height:21%!important}
   .book-shell .book-page-final .cluster-mong{left:67%!important;top:11%!important;width:14%!important;height:16%!important}
   .book-shell .book-page-final .cluster-sham{left:13%!important;top:48%!important;width:40%!important;height:36%!important}
-  .book-shell .book-page-final .cluster-west{left:35%!important;top:40%!important;width:47%!important;height:39%!important}
+  .book-shell .book-page-final .cluster-west{left:27%!important;top:36%!important;width:61%!important;height:50%!important}
+  .book-shell .book-page-final .cluster-west .map-artwork img{transform:scale(1.28)!important}
   .book-shell .book-page-final .cluster-kennedy{left:69%!important;top:67%!important;width:25%!important;height:25%!important}
 }
 .book-shell .spread-kennedy{background:#fff;color:#26323a;}

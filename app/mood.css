@@ -548,6 +548,16 @@
   .book-shell .book-page-final .cluster-west{left:49%!important;top:49%!important;width:30%!important;height:24%!important}
   .book-shell .book-page-final .cluster-west .map-artwork img{transform:none!important}
   .book-shell .book-page-final .cluster-kennedy{left:72%!important;top:70%!important;width:22%!important;height:22%!important}
+
+  /* Chrome-safe final page frame: keep the complete composition inside the viewport. */
+  .book-shell .book-page-final .book-final-postcard{position:relative!important;display:block!important;width:100%!important;height:100%!important;min-height:0!important;padding:0!important;overflow:hidden!important}
+  .book-shell .book-page-final .final-result-header{position:absolute!important;z-index:10!important;left:5vw!important;top:4vh!important;width:min(34vw,390px)!important;max-width:390px!important;margin:0!important;text-align:left!important}
+  .book-shell .book-page-final .final-result-header h1{font-size:clamp(1.3rem,2.2vw,2.2rem)!important}
+  .book-shell .book-page-final .final-result-sentence{font-size:clamp(11px,1vw,14px)!important;margin:.55rem 0!important}
+  .book-shell .book-page-final .final-result-conclusion{display:none!important}
+  .book-shell .book-page-final .final-result-meta{font-size:7px!important}
+  .book-shell .book-page-final .final-collage-field{position:absolute!important;left:5vw!important;right:5vw!important;top:16vh!important;bottom:9vh!important;width:auto!important;height:auto!important;min-height:0!important;padding:0!important}
+  .book-shell .book-page-final .final-choice-summary{position:absolute!important;left:5vw!important;right:5vw!important;bottom:3vh!important;margin:0!important;text-align:left!important}
 }
 .book-shell .spread-kennedy{background:#fff;color:#26323a;}
 .book-shell .spread-kennedy .kennedy-image{z-index:1!important;}

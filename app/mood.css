@@ -1022,12 +1022,12 @@
   .book-shell .book-intro h2{font-size:clamp(2.7rem,6vw,6.6rem)!important;line-height:.84!important;max-width:54vw!important}
   .book-shell .spread-central .central-word{font-size:clamp(2.8rem,5vw,4.8rem)!important;line-height:.78!important}
   .book-shell .spread-central .central-word{
-    top:14vh!important;left:18vw!important;font-size:clamp(2.8rem,5vw,4.8rem)!important;
+    top:8vh!important;left:18vw!important;font-size:clamp(2.8rem,5vw,4.8rem)!important;
     line-height:.78!important;max-height:none!important;overflow:visible!important;transform:none!important;
   }
   .book-shell .spread-central .central-lines{left:43%!important;right:25%!important;top:8%!important;bottom:8%!important}
   .book-shell .spread-central .central-memory{right:8vw!important;bottom:17vh!important;max-width:22ch!important;font-size:clamp(1rem,1.55vw,1.55rem)!important}
-  .book-shell .spread-mong .mong-title{top:18vh!important;left:1vw!important;font-size:clamp(4.5rem,9vw,9rem)!important;line-height:.72!important}
+  .book-shell .spread-mong .mong-title{top:18vh!important;left:1vw!important;font-size:clamp(3.6rem,7vw,7.4rem)!important;line-height:.72!important}
   .book-shell .spread-mong .mong-title span+span{margin-left:29vw!important}
   .book-shell .spread-mong .mong-fragment{font-size:clamp(8px,1vw,12px)!important;line-height:1.2!important}
   .book-shell .spread-mong .fragment-1{top:40vh!important;left:7vw!important;font-size:clamp(1.2rem,2vw,2rem)!important}

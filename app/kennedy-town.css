@@ -150,9 +150,9 @@ html:has(.kt-experience),body:has(.kt-experience){overflow-x:hidden;overflow-y:s
   .kt-memory-section{min-height:128svh!important;padding:8vh 7vw 10vh!important}
   .kt-memory-section > .kt-label{position:relative!important;z-index:5!important;margin:0 0 2vh!important}
   .kt-memory-intro{position:relative!important;z-index:5!important;display:block!important;margin:0 0 4vh 8vw!important}
-  .kt-memory-intro h2{max-width:10ch!important;margin:0!important;font-size:clamp(2.5rem,4.4vw,4.6rem)!important;line-height:.86!important}
+  .kt-memory-intro h2{max-width:10ch!important;margin:0!important;font-size:clamp(2rem,3.2vw,3.4rem)!important;line-height:.86!important}
   .kt-memory-intro p{margin:1.5vh 0 0!important;font-size:1rem!important}
-  .kt-memory-scene{height:57vh!important;max-height:none!important;margin:0 3vw!important}
+  .kt-memory-scene{display:block!important;width:min(78vw,1180px)!important;height:57vh!important;max-height:none!important;margin:0 auto!important}
   .kt-memory-zone{opacity:.92!important;max-width:22%!important}
   .kt-memory-zone p{max-width:15ch!important;margin-top:8px!important;font-size:clamp(.95rem,1.35vw,1.45rem)!important;line-height:1.02!important}
   .kt-zone-water{left:6%!important;top:68%!important}

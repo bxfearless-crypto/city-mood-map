@@ -524,6 +524,8 @@
 
 /* SSP page 05: separate the side label from the passing-through note. */
 @media (min-width:701px){
+  .memory-book,.memory-book .book-shell,.memory-book .book-page{height:100dvh!important;min-height:100dvh!important}
+  .book-shell .book-page-final .book-final-postcard{min-height:0!important;padding:clamp(18px,4vh,42px) clamp(24px,4vw,60px) clamp(12px,2vh,18px)!important}
   .book-shell .spread-sham .sham-note{left:52%!important;top:54%!important;bottom:auto!important;max-width:22ch!important}
   .book-shell .spread-sham .sham-fragment-small{left:8%!important;right:auto!important;top:68%!important;bottom:auto!important}
   .book-shell .book-keep h2{font-size:clamp(2.2rem,5.2vw,5.8rem)!important;line-height:.78!important}

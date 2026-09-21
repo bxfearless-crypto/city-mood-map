@@ -153,10 +153,10 @@ html:has(.kt-experience),body:has(.kt-experience){overflow-x:hidden;overflow-y:s
     clip-path:none!important;
     opacity:.62!important;
     background:
-      linear-gradient(rgba(45,64,68,.72),rgba(45,64,68,.72)) 0% 16%/12% 84% no-repeat,
-      linear-gradient(rgba(45,64,68,.72),rgba(45,64,68,.72)) 29% 4%/12% 96% no-repeat,
-      linear-gradient(rgba(45,64,68,.72),rgba(45,64,68,.72)) 58% 23%/12% 77% no-repeat,
-      linear-gradient(rgba(45,64,68,.72),rgba(45,64,68,.72)) 87% 10%/12% 90% no-repeat!important;
+      linear-gradient(rgba(45,64,68,.72),rgba(45,64,68,.72)) 4% 16%/12% 84% no-repeat,
+      linear-gradient(rgba(45,64,68,.72),rgba(45,64,68,.72)) 35% 4%/12% 96% no-repeat,
+      linear-gradient(rgba(45,64,68,.72),rgba(45,64,68,.72)) 56% 23%/12% 77% no-repeat,
+      linear-gradient(rgba(45,64,68,.72),rgba(45,64,68,.72)) 80% 10%/12% 90% no-repeat!important;
   }
 }
 

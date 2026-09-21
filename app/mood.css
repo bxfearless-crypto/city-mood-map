@@ -556,7 +556,7 @@
   .book-shell .book-page-final .final-result-sentence{font-size:clamp(11px,1vw,14px)!important;margin:.55rem 0!important}
   .book-shell .book-page-final .final-result-conclusion{display:none!important}
   .book-shell .book-page-final .final-result-meta{font-size:7px!important}
-  .book-shell .book-page-final .final-collage-field{position:absolute!important;left:5vw!important;right:5vw!important;top:16vh!important;bottom:9vh!important;width:auto!important;height:auto!important;min-height:0!important;padding:0!important}
+  .book-shell .book-page-final .final-collage-field{position:absolute!important;left:44vw!important;right:5vw!important;top:20vh!important;bottom:15vh!important;width:auto!important;height:auto!important;min-height:0!important;padding:0!important}
   .book-shell .book-page-final .final-choice-summary{position:absolute!important;left:5vw!important;right:5vw!important;bottom:3vh!important;margin:0!important;text-align:left!important}
 }
 .book-shell .spread-kennedy{background:#fff;color:#26323a;}

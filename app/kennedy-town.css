@@ -152,7 +152,11 @@ html:has(.kt-experience),body:has(.kt-experience){overflow-x:hidden;overflow-y:s
     inset:18% 12% 30% 12%!important;
     clip-path:none!important;
     opacity:.62!important;
-    background:repeating-linear-gradient(90deg,rgba(45,64,68,.72) 0 12%,transparent 12% 25%)!important;
+    background:
+      linear-gradient(rgba(45,64,68,.72),rgba(45,64,68,.72)) 0% 16%/12% 84% no-repeat,
+      linear-gradient(rgba(45,64,68,.72),rgba(45,64,68,.72)) 29% 4%/12% 96% no-repeat,
+      linear-gradient(rgba(45,64,68,.72),rgba(45,64,68,.72)) 58% 23%/12% 77% no-repeat,
+      linear-gradient(rgba(45,64,68,.72),rgba(45,64,68,.72)) 87% 10%/12% 90% no-repeat!important;
   }
 }
 

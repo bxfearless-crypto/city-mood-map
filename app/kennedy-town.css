@@ -144,3 +144,21 @@ html:has(.kt-experience),body:has(.kt-experience){overflow-x:hidden;overflow-y:s
 .kt-catch-section .kt-light-moment{pointer-events:auto;touch-action:manipulation}
 .kt-catch-section .kt-light-moment small{z-index:6;color:#fff!important;text-shadow:0 1px 8px rgba(50,34,32,.7)}
 .kt-catch-section .kt-light-moment small{top:calc(100% + 4px)}
+
+/* Final Chrome desktop pass for Kennedy Town section 03: four readable memory zones, no text pile-up. */
+@media (min-width:701px){
+  .kt-memory-section{min-height:128svh!important;padding:8vh 7vw 10vh!important}
+  .kt-memory-section > .kt-label{position:relative!important;z-index:5!important;margin:0 0 2vh!important}
+  .kt-memory-intro{position:relative!important;z-index:5!important;display:block!important;margin:0 0 4vh 8vw!important}
+  .kt-memory-intro h2{max-width:10ch!important;margin:0!important;font-size:clamp(2.5rem,4.4vw,4.6rem)!important;line-height:.86!important}
+  .kt-memory-intro p{margin:1.5vh 0 0!important;font-size:1rem!important}
+  .kt-memory-scene{height:57vh!important;max-height:none!important;margin:0 3vw!important}
+  .kt-memory-zone{opacity:.92!important;max-width:22%!important}
+  .kt-memory-zone p{max-width:15ch!important;margin-top:8px!important;font-size:clamp(.95rem,1.35vw,1.45rem)!important;line-height:1.02!important}
+  .kt-zone-water{left:6%!important;top:68%!important}
+  .kt-zone-human{left:43%!important;top:12%!important}
+  .kt-zone-light{right:7%!important;top:8%!important}
+  .kt-zone-home{right:8%!important;bottom:8%!important}
+  .kt-memory-ending{position:relative!important;z-index:5!important;margin:4vh 0 0 12vw!important}
+  .kt-memory-ending p{max-width:16ch!important;margin:0!important;font-size:clamp(1.8rem,3vw,3.2rem)!important;line-height:.9!important}
+}

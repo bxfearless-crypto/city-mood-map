@@ -159,6 +159,7 @@ html:has(.kt-experience),body:has(.kt-experience){overflow-x:hidden;overflow-y:s
   .kt-zone-human{left:43%!important;top:12%!important}
   .kt-zone-light{right:7%!important;top:8%!important}
   .kt-zone-home{right:8%!important;bottom:8%!important}
-  .kt-memory-ending{position:relative!important;z-index:5!important;margin:4vh 0 0 12vw!important}
-  .kt-memory-ending p{max-width:16ch!important;margin:0!important;font-size:clamp(1.8rem,3vw,3.2rem)!important;line-height:.9!important}
+  .kt-memory-ending{position:relative!important;z-index:5!important;width:min(78vw,1180px)!important;margin:4vh auto 0!important;text-align:center!important}
+  .kt-memory-ending p{max-width:16ch!important;margin:0 auto!important;font-size:clamp(1.8rem,3vw,3.2rem)!important;line-height:.9!important}
+  .kt-memory-ending small{display:block!important;margin-top:1.5vh!important}
 }

@@ -34,6 +34,12 @@ const choiceLabel: Record<string, string> = {
   sea: 'THE SEA', silence: 'THE SILENCE', feeling: 'THE FEELING',
 };
 
+const MONG_KOK_CHOICES = ['energy', 'people', 'noise', 'details'] as const;
+type MongKokChoice = typeof MONG_KOK_CHOICES[number];
+const normalizeMongKokChoice = (value: string): MongKokChoice => (
+  MONG_KOK_CHOICES.includes(value as MongKokChoice) ? value as MongKokChoice : 'details'
+);
+
 type AxisScore = readonly [number, number, number];
 const choiceAxes: Record<string, AxisScore> = {
   moving: [1, -1, 1], slow: [-1, 1, -1], energy: [1, -1, -1], people: [1, 1, -1], noise: [1, 1, 1], details: [-1, 1, 1],
@@ -120,7 +126,7 @@ export default function MoodPage() {
     const westChoice = westObservation.observation || ({ CREATE: 'POSSIBILITY', WANDER: 'DISTANCE', OBSERVE: 'FORM', REST: 'LIGHT' } as Record<string, string>)[westMood.response] || 'DISTANCE';
     setChoices({
       central: read('central-mood-choice') || 'slow',
-      mong: read('mong-kok-mood') || 'details',
+      mong: normalizeMongKokChoice(read('mong-kok-mood')),
       sham: read('sham-shui-po-memory') || 'memory',
       west: String(westChoice).toLowerCase(),
       kennedy: String(kennedy.response || 'SEA').toLowerCase(),

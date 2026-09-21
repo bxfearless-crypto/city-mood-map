@@ -1,0 +1,289 @@
+/* First-screen art direction only. Later sections and interaction selectors are intentionally untouched. */
+
+/* CENTRAL — vertical, compressed, architectural. */
+.central-experience > .central-arrival {
+  min-height: 100svh !important;
+  padding: 12vh 0 10vh 11vw;
+  overflow: hidden;
+  background: linear-gradient(104deg, #b9c2c2 0%, #e7e8e3 47%, #a9b4b6 100%);
+}
+.central-experience > .central-arrival::before,
+.central-experience > .central-arrival::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(35, 46, 48, .25);
+}
+.central-experience > .central-arrival::before { left: 18vw; box-shadow: 19vw 0 rgba(35,46,48,.12), 43vw 0 rgba(35,46,48,.16); }
+.central-experience > .central-arrival::after { right: 16vw; opacity: .55; }
+.central-experience > .central-arrival .central-kicker {
+  position: absolute;
+  top: 31vh;
+  left: 4vw;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  letter-spacing: .22em;
+}
+.central-experience > .central-arrival .arrival-meta { top: 16vh; right: 9vw; }
+.central-experience > .central-arrival .arrival-meta {
+  width: 190px;
+  display: block;
+  text-align: right;
+}
+.central-experience > .central-arrival .arrival-meta span { display: block; }
+.central-experience > .central-arrival .arrival-meta span + span { margin-top: 5px; }
+.central-experience > .central-arrival h1 {
+  position: absolute;
+  top: 9vh;
+  left: 24vw;
+  height: 84vh;
+  margin: 0;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: clamp(6rem, 12vw, 12rem);
+  line-height: .72;
+  letter-spacing: -.18em;
+  transform: translateX(-28%);
+  overflow: hidden;
+}
+.central-experience > .central-arrival .central-feeling {
+  position: absolute;
+  top: 28vh;
+  left: 52vw;
+  margin: 0;
+  font-size: clamp(1.1rem, 2vw, 2rem);
+}
+.central-experience > .central-arrival .central-line {
+  position: absolute;
+  right: 12vw;
+  bottom: 18vh;
+  margin: 0;
+  font-size: clamp(1.6rem, 3vw, 3.4rem);
+  text-align: right;
+}
+.central-experience > .central-arrival .arrival-mark { left: 72vw; bottom: 10vh; }
+
+/* MONG KOK — dense, interrupted, already in motion. */
+.mong-kok-experience > .mk-arrival {
+  min-height: 100svh;
+  padding: 13vh 0 8vh;
+  background:
+    radial-gradient(circle at 12% 35%, rgba(157,60,59,.34), transparent 16%),
+    radial-gradient(circle at 86% 24%, rgba(81,116,184,.32), transparent 18%),
+    linear-gradient(125deg, #111116 0%, #211925 52%, #101014 100%);
+}
+.mong-kok-experience > .mk-arrival::before {
+  content: '18:47   EXIT E2   OPEN LATE   NEXT TRAIN   ARGYLE STREET →';
+  position: absolute;
+  top: 22vh;
+  left: -4vw;
+  width: 108vw;
+  color: rgba(240,236,228,.42);
+  font: 10px 'DM Mono', monospace;
+  letter-spacing: .24em;
+  transform: rotate(-7deg);
+  white-space: nowrap;
+}
+.mong-kok-experience > .mk-arrival::after {
+  content: 'NO ROOM  /  TURN LEFT  /  KEEP MOVING  /  02 / MK  /  出口';
+  position: absolute;
+  right: -7vw;
+  bottom: 28vh;
+  color: rgba(157,60,59,.72);
+  font: 700 clamp(1rem, 2vw, 2rem) 'DM Mono', monospace;
+  letter-spacing: -.08em;
+  transform: rotate(9deg);
+  white-space: nowrap;
+}
+.mong-kok-experience > .mk-arrival .mk-section-label { position: absolute; top: 20vh; left: 8vw; }
+.mong-kok-experience > .mk-arrival .mk-coordinates { top: 15vh; right: 8vw; }
+.mong-kok-experience > .mk-arrival h1 {
+  position: absolute;
+  z-index: 2;
+  top: 33vh;
+  left: -3vw;
+  margin: 0;
+  font-size: clamp(5rem, 15vw, 15rem);
+  line-height: .55;
+  letter-spacing: -.16em;
+  transform: rotate(-4deg);
+}
+.mong-kok-experience > .mk-arrival h1 span:first-child { margin-left: 11vw; }
+.mong-kok-experience > .mk-arrival h1 span:last-child { transform: translate(20vw, -.08em) skewX(-14deg); }
+.mong-kok-experience > .mk-arrival .mk-feeling { position: absolute; top: 61vh; left: 13vw; margin: 0; z-index: 3; }
+.mong-kok-experience > .mk-arrival .mk-intro { position: absolute; top: 68vh; left: 45vw; margin: 0; z-index: 3; font-size: clamp(1.2rem, 2.6vw, 2.6rem); }
+.mong-kok-experience > .mk-arrival .mk-sign-strip { right: 9vw; bottom: 14vh; z-index: 4; }
+
+/* SHAM SHUI PO — object before place name. */
+.ssp-experience > .ssp-entry {
+  min-height: 100svh;
+  padding: 12vh 8vw 10vh;
+  background: #ded3bd;
+}
+.ssp-experience > .ssp-entry::before {
+  content: '';
+  position: absolute;
+  left: 10vw;
+  top: 22vh;
+  width: min(42vw, 470px);
+  height: 47vh;
+  background: linear-gradient(rgba(238,228,210,.08),rgba(238,228,210,.08)), url('/sham-shui-po-found-material.png') center/cover;
+  filter: sepia(.18) saturate(.7) contrast(.92);
+  box-shadow: 14px 18px 0 rgba(84,67,49,.14), 0 22px 35px rgba(84,67,49,.17);
+  transform: rotate(-5deg);
+}
+.ssp-experience > .ssp-entry::after { right: 12vw; bottom: 16vh; width: 18vw; transform: rotate(4deg); }
+.ssp-experience > .ssp-entry .ssp-label { position: absolute; top: 18vh; left: 10vw; }
+.ssp-experience > .ssp-entry .ssp-coords { top: 17vh; right: 9vw; }
+.ssp-experience > .ssp-entry h1 {
+  position: absolute;
+  z-index: 2;
+  left: 56vw;
+  top: 28vh;
+  margin: 0;
+  font: 600 clamp(1.2rem, 2.2vw, 2.1rem)/1.1 'DM Mono', monospace;
+  letter-spacing: .12em;
+  color: var(--brick);
+  transform: rotate(3deg);
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  padding: 10px 14px;
+}
+.ssp-experience > .ssp-entry .ssp-feeling { position: absolute; left: 57vw; top: 42vh; margin: 0; font-size: 1.35rem; }
+.ssp-experience > .ssp-entry .ssp-intro { position: absolute; left: 56vw; top: 54vh; margin: 0; max-width: 23ch; font-size: clamp(1.3rem, 2.4vw, 2.5rem); }
+.ssp-experience > .ssp-entry .ssp-stamp { left: 11vw; right: auto; bottom: 16vh; }
+
+/* WEST KOWLOON — open field, horizon, restraint. */
+.west-experience > .west-open {
+  min-height: 100svh;
+  padding: 15vh 8vw 10vh;
+  background: #d9edf0 !important;
+}
+.west-experience > .west-open::before {
+  content: '';
+  position: absolute;
+  left: 7vw;
+  right: 7vw;
+  top: 61vh;
+  height: 1px;
+  background: rgba(64, 116, 128, .48);
+  box-shadow: 0 14px 34px rgba(104,154,163,.18);
+}
+.west-experience > .west-open::after {
+  content: '';
+  position: absolute;
+  left: 7vw;
+  top: 59vh;
+  width: 8vw;
+  height: 4vh;
+  border-top: 1px solid rgba(64,116,128,.22);
+  transform: skewX(-32deg);
+}
+.west-experience > .west-open .west-label { position: absolute; top: 18vh; left: 8vw; }
+.west-experience > .west-open .west-coords { top: 18vh; right: 8vw; opacity: .64; }
+.west-experience > .west-open h1 {
+  position: absolute;
+  left: 8vw;
+  top: 35vh;
+  margin: 0;
+  font: 400 clamp(1.4rem, 2.3vw, 2.4rem)/1 'DM Mono', monospace;
+  letter-spacing: .28em;
+  color: #5f8995;
+}
+.west-experience > .west-open .west-feeling { position: absolute; left: 8vw; top: 40vh; margin: 0; font-size: 1rem; opacity: .8; }
+.west-experience > .west-open .west-mantra { position: absolute; left: 8vw; bottom: 10vh; margin: 0; gap: 0; font-size: 1rem; opacity: .5; }
+.west-experience > .west-open .west-mantra span { margin: 0 !important; display: inline; }
+.west-experience > .west-open .west-mantra span + span::before { content: '  /  '; }
+
+/* KENNEDY TOWN — the warm light is the subject, title is a caption. */
+.kt-experience > .kt-afternoon {
+  min-height: 100svh;
+  padding: 13vh 8vw 10vh;
+  overflow: hidden;
+  background: linear-gradient(125deg, #df9b70 0%, #e8c096 38%, #b5c8c6 76%, #7fabb2 100%) !important;
+}
+.kt-experience > .kt-afternoon::before {
+  content: '';
+  position: absolute;
+  left: 45vw;
+  top: 18vh;
+  width: 30vw;
+  height: 30vw;
+  max-width: 390px;
+  max-height: 390px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,225,163,.92) 0 9%, rgba(247,185,115,.5) 28%, rgba(225,139,91,.14) 58%, transparent 72%);
+  filter: blur(3px);
+  mix-blend-mode: screen;
+}
+.kt-experience > .kt-afternoon::after { left: 7vw; bottom: 16vh; width: 72vw; transform: rotate(-4deg); background: rgba(101,77,74,.48); box-shadow: 16vw -34px 0 rgba(101,77,74,.24), 38vw 22px 0 rgba(101,77,74,.16); }
+.kt-experience > .kt-afternoon .kt-label { position: absolute; top: 20vh; left: 8vw; color: #7b5753; }
+.kt-experience > .kt-afternoon .kt-coords { top: 19vh; right: 8vw; color: #6e7777; }
+.kt-experience > .kt-afternoon h1 {
+  position: absolute;
+  left: 8vw;
+  top: 39vh;
+  margin: 0;
+  font: 400 clamp(2.2rem, 5vw, 5.2rem)/.88 Georgia, serif;
+  letter-spacing: .02em;
+  color: #684d50;
+  text-shadow: 0 2px 20px rgba(255,220,166,.35);
+}
+.kt-experience > .kt-afternoon .kt-feeling { position: absolute; left: 8vw; top: 56vh; margin: 0; color: #765c5b; font-size: 1.15rem; }
+.kt-experience > .kt-afternoon .kt-time { position: absolute; left: 8vw; bottom: 15vh; margin: 0; color: #617f82; }
+.kt-experience > .kt-afternoon .kt-mantra { position: absolute; right: 10vw; bottom: 14vh; margin: 0; max-width: 15ch; font-size: clamp(1.15rem, 2.2vw, 2.2rem); color: #5a7276; }
+
+@media (max-width: 700px) {
+  .central-experience > .central-arrival h1 { left: 28vw; font-size: 28vw; }
+  .central-experience > .central-arrival .central-feeling { left: 56vw; top: 27vh; font-size: 1rem; }
+  .central-experience > .central-arrival .central-line { right: 8vw; bottom: 18vh; font-size: 1.5rem; }
+  .mong-kok-experience > .mk-arrival h1 { top: 34vh; left: -10vw; font-size: 27vw; }
+  .mong-kok-experience > .mk-arrival .mk-intro { left: 36vw; top: 70vh; font-size: 1.15rem; }
+  .ssp-experience > .ssp-entry::before { left: 8vw; top: 26vh; width: 44vw; height: 34vh; }
+  .ssp-experience > .ssp-entry h1 { left: 58vw; top: 30vh; font-size: .72rem; }
+  .ssp-experience > .ssp-entry .ssp-feeling { left: 58vw; top: 42vh; font-size: .9rem; }
+  .ssp-experience > .ssp-entry .ssp-intro { left: 52vw; top: 55vh; font-size: 1.1rem; }
+  .west-experience > .west-open h1 { top: 38vh; left: 8vw; font-size: .9rem; }
+  .west-experience > .west-open .west-feeling { top: 42vh; font-size: .85rem; }
+  .kt-experience > .kt-afternoon h1 { top: 42vh; left: 8vw; font-size: 12vw; }
+  .kt-experience > .kt-afternoon::before { left: 40vw; top: 22vh; width: 48vw; height: 48vw; }
+  .kt-experience > .kt-afternoon .kt-mantra { right: 8vw; bottom: 14vh; font-size: 1rem; }
+}
+
+/* Readability pass: preserve the compositions while keeping type above all art layers. */
+.central-experience > .central-arrival > * { z-index: 3; }
+.central-experience > .central-arrival::before,
+.central-experience > .central-arrival::after { z-index: 1; pointer-events: none; }
+.central-experience > .central-arrival .central-kicker { left: 7vw; }
+.central-experience > .central-arrival .arrival-meta { z-index: 4; }
+.central-experience > .central-arrival h1 { z-index: 2; }
+.mong-kok-experience > .mk-arrival > * { z-index: 4; }
+.mong-kok-experience > .mk-arrival::before,
+.mong-kok-experience > .mk-arrival::after { z-index: 1; pointer-events: none; }
+.mong-kok-experience > .mk-arrival h1 { z-index: 2; }
+.mong-kok-experience > .mk-arrival .mk-section-label,
+.mong-kok-experience > .mk-arrival .mk-coordinates { z-index: 5; }
+.ssp-experience > .ssp-entry > * { z-index: 4; }
+.ssp-experience > .ssp-entry::before { z-index: 1; pointer-events: none; }
+.ssp-experience > .ssp-entry h1 { z-index: 5; }
+.west-experience > .west-open > * { z-index: 4; }
+.west-experience > .west-open::before,
+.west-experience > .west-open::after { z-index: 1; pointer-events: none; }
+.kt-experience > .kt-afternoon > * { z-index: 4; }
+.kt-experience > .kt-afternoon::before,
+.kt-experience > .kt-afternoon::after { z-index: 1; pointer-events: none; }
+
+@media (min-width: 701px) and (max-width: 1100px) {
+  .central-experience > .central-arrival h1 { left: 22vw; font-size: clamp(6rem, 16vw, 11rem); }
+  .central-experience > .central-arrival .central-feeling { left: 49vw; }
+  .mong-kok-experience > .mk-arrival h1 { left: -7vw; font-size: clamp(5rem, 14vw, 10rem); }
+  .mong-kok-experience > .mk-arrival .mk-intro { left: 43vw; }
+  .ssp-experience > .ssp-entry::before { width: 39vw; }
+  .ssp-experience > .ssp-entry h1 { left: 53vw; }
+  .ssp-experience > .ssp-entry .ssp-feeling,
+  .ssp-experience > .ssp-entry .ssp-intro { left: 54vw; }
+  .west-experience > .west-open h1 { left: 8vw; }
+  .kt-experience > .kt-afternoon h1 { left: 8vw; }
+}

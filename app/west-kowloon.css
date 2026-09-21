@@ -1,0 +1,107 @@
+.west-experience{--paper:#f5f4ef;--ink:#26343a;--blue:#91b8c4;--cursor-x:50vw;--cursor-y:50vh;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:Manrope,Arial,sans-serif}.west-experience *{box-sizing:border-box}.west-breathing-field{position:fixed;inset:auto auto auto auto;z-index:5;pointer-events:none;width:220px;height:220px;left:calc(var(--cursor-x) - 110px);top:calc(var(--cursor-y) - 110px);border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.32),transparent 68%);mix-blend-mode:screen;transition:left 1.2s ease-out,top 1.2s ease-out}.west-nav,.west-footer{position:absolute;z-index:9;left:4vw;right:4vw;display:flex;justify-content:space-between;font:10px 'DM Mono',monospace;letter-spacing:.12em;text-transform:uppercase}.west-nav{top:28px}.west-footer{bottom:28px;color:#71858c}.west-nav a,.west-footer a{color:inherit;text-decoration:none}.west-label{margin:0;color:#879aa0;font:10px 'DM Mono',monospace;letter-spacing:.16em;text-transform:uppercase}.west-open,.west-horizon,.west-window,.west-make{position:relative;min-height:100svh;padding:16vh 8vw 12vh}.west-open{background:linear-gradient(145deg,#faf9f5,#eaf2f2 65%,#dcebed)}.west-coords{position:absolute;top:18vh;right:8vw;color:#83969c;font:10px 'DM Mono',monospace;line-height:1.8;text-align:right}.west-coords span{color:#779fac}.west-open h1{margin:18vh 0 0;font:300 clamp(4rem,10vw,11rem)/.84 Georgia,serif;letter-spacing:.01em;white-space:nowrap}.west-feeling{margin:5vh 0 0 17vw;color:#688997;font:italic clamp(1.5rem,2.7vw,3rem) Georgia,serif}.west-mantra{display:flex;flex-direction:column;gap:7vh;margin:13vh 0 0 34vw;font:clamp(1.5rem,3vw,3.2rem)/.9 Georgia,serif}.west-mantra span:nth-child(2){margin-left:11vw;color:#5e8999}.west-mantra span:nth-child(3){margin-left:22vw}.west-horizon{background:#eef4f2;min-height:120svh}.west-sky{position:relative;height:80vh;margin-top:8vh;background:linear-gradient(to bottom,#dcecf1 0%,#f5f7f2 48%,#c0d6d9 49%,#e8eeee 53%,#b7d2d6 100%);overflow:hidden}.west-horizon-line{position:absolute;left:0;right:0;top:var(--horizon-y);height:1px;background:rgba(72,113,126,.65);box-shadow:0 8px 26px rgba(107,154,163,.22);transition:top 1s ease-out}.west-word{position:absolute;color:#71919b;font:11px 'DM Mono',monospace;letter-spacing:.22em;transition:letter-spacing 1.2s ease,transform 1.2s ease}.west-word:hover{letter-spacing:.8em;transform:translateX(8px)}.west-word-space{top:18%;left:13%}.west-word-light{top:31%;right:20%}.west-word-distance{top:58%;left:29%}.west-word-art{top:72%;right:12%}.west-word-pause{top:42%;left:60%}.west-window{background:#e7eeee;min-height:125svh}.west-visual-window{position:relative;height:68vh;margin:8vh 4vw 0;border:1px solid rgba(94,137,151,.35);overflow:hidden;background:#cadfe2}.west-layer{position:absolute;inset:-3%;transition:transform 1.4s ease-out}.west-sky-layer{background:linear-gradient(170deg,#eff7f5 0%,#c5e0e4 55%,transparent 56%);transform:translateX(-1%)}.west-architecture-layer{inset:25% -2% -2%;background:linear-gradient(125deg,transparent 0 27%,rgba(68,101,108,.38) 27% 29%,transparent 29% 46%,rgba(107,137,140,.3) 46% 55%,transparent 55%),linear-gradient(75deg,transparent 0 64%,rgba(47,75,81,.28) 64% 66%,transparent 66%);transform:translateX(0)}.west-water-layer{inset:60% -4% -4%;background:repeating-linear-gradient(0deg,rgba(247,250,246,.45) 0 2px,transparent 2px 13px);transform:translateX(1%)}.west-human-mark{position:absolute;left:53%;bottom:12%;width:7px;height:60px;background:#344c53;transform:translateX(-50%)}.west-human-mark:after{content:'';position:absolute;left:-5px;top:-8px;width:17px;height:17px;border-radius:50%;background:#344c53}.west-sentence{position:absolute;opacity:.72;color:#385862;font:italic clamp(1.1rem,2vw,2rem)/1.05 Georgia,serif;transition:opacity .7s,transform 1s}.west-sentence-sky{top:16%;left:10%}.west-sentence-water{bottom:14%;right:9%}.west-sentence-architecture{top:52%;left:38%}.west-sentence-human{bottom:25%;left:55%}.west-visual-window:hover .west-sky-layer{transform:translateX(-2%)}.west-visual-window:hover .west-architecture-layer{transform:translateX(1%)}.west-visual-window:hover .west-water-layer{transform:translateX(3%)}.west-make{min-height:105svh;background:#f8f7f2}.west-question{margin:18vh 0 0 11vw;font:clamp(2.5rem,5vw,5.4rem)/.88 Georgia,serif}.west-question em{color:#6f9aa6}.west-choice-field{position:relative;height:37vh;margin-top:11vh}.west-choice{position:absolute;border:0;background:none;color:var(--ink);cursor:pointer;font:clamp(1.2rem,2.6vw,2.7rem) Georgia,serif;letter-spacing:.08em;transition:letter-spacing 1s,transform 1.2s,color .6s,opacity .7s}.west-choice:hover,.west-choice:focus-visible,.west-choice.is-selected{outline:0;color:#6c99a6;letter-spacing:.34em}.west-choice-create{top:5%;left:12%}.west-choice-wander{top:42%;left:36%}.west-choice-observe{top:15%;right:13%}.west-choice-rest{bottom:4%;right:28%}.west-wander .west-choice-wander{transform:translateX(30px)}.west-observe .west-choice:not(.west-choice-observe){opacity:.35}.west-create .west-choice-field:before{content:'';position:absolute;inset:0;background:linear-gradient(15deg,transparent 0 35%,rgba(111,154,166,.32) 35% 35.3%,transparent 35.3% 64%,rgba(111,154,166,.2) 64% 64.3%,transparent 64.3%);pointer-events:none;opacity:.6}.west-saved{margin:3vh 0 0 11vw;color:#6b929c;font:10px 'DM Mono',monospace;letter-spacing:.14em}@media(max-width:700px){.west-nav span:last-child,.west-footer span:last-child{display:none}.west-nav,.west-footer{left:22px;right:22px;font-size:8px}.west-open,.west-horizon,.west-window,.west-make{padding:15vh 22px 12vh}.west-open h1{margin-top:20vh;font-size:14vw;white-space:normal}.west-mantra{margin-left:10vw;gap:5vh}.west-mantra span:nth-child(2){margin-left:8vw}.west-mantra span:nth-child(3){margin-left:16vw}.west-sky{height:72vh}.west-visual-window{height:58vh;margin:8vh 0 0}.west-sentence{font-size:1rem}.west-question{margin-left:0;font-size:12vw}.west-choice-field{height:42vh}.west-choice-create{left:6%}.west-choice-observe{right:4%}.west-choice-rest{right:12%}}
+@media(prefers-reduced-motion:reduce){.west-breathing-field,.west-horizon-line,.west-layer,.west-sentence,.west-choice{transition:none}}
+.west-experience,.west-open,.west-horizon,.west-window,.west-make{background:#87bfd5}
+.west-horizon,.west-horizon .west-space-field{touch-action:none;overscroll-behavior:contain}
+html:has(.west-experience),body:has(.west-experience){overflow-x:hidden;max-width:100vw}
+.west-experience{width:100%;max-width:100vw;min-width:0;overflow-x:clip}
+html:has(.west-experience),body:has(.west-experience){background:#87bfd5}
+.west-experience,.west-experience>section,.west-experience>header,.west-experience>footer{width:100%;max-width:100vw}
+.west-experience{background:linear-gradient(90deg,#78b9d2 0%,#83c1d8 28%,#87bfd5 58%,#87bfd5 100%)!important}
+.west-experience>section{background:linear-gradient(90deg,#78b9d2 0%,#83c1d8 28%,#87bfd5 58%,#87bfd5 100%)!important}
+.west-experience,.west-experience>section{transition:background-color 1.2s ease,background 1.2s ease}
+.west-experience > .west-horizon{
+  display:block!important;
+  position:relative!important;
+  width:100%!important;
+  height:120svh!important;
+  min-height:120svh!important;
+  padding:16vh 4vw 12vh 12vw!important;
+  overflow:visible!important;
+  visibility:visible!important;
+  opacity:1!important;
+}
+.west-experience > .west-horizon > .west-sky{
+  display:block!important;
+  position:relative!important;
+  width:100%!important;
+  height:80vh!important;
+  min-height:520px;
+  visibility:visible!important;
+  opacity:1!important;
+}
+.west-experience > .west-open{
+  padding-top:22vh!important;
+  user-select:none;
+  -webkit-user-select:none;
+}
+.west-experience > .west-open *{
+  user-select:none;
+  -webkit-user-select:none;
+}
+.west-experience > .west-open > .west-label{
+  position:relative;
+  z-index:12;
+  margin-top:0!important;
+}
+.west-experience > .west-nav{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) auto auto;
+  column-gap:2.5vw;
+  align-items:start;
+  right:6vw!important;
+}
+.west-experience > .west-nav a,
+.west-experience > .west-nav span{
+  white-space:nowrap;
+}
+.west-experience > .west-nav a{
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.west-experience > .west-nav span:last-child{
+  position:static;
+  transform:none;
+  font-size:10px;
+  letter-spacing:.12em;
+  margin-right:48px;
+}
+.west-experience > .west-nav{
+  display:flex!important;
+  grid-template-columns:none!important;
+  left:4vw!important;
+  right:4vw!important;
+  justify-content:space-between!important;
+  column-gap:0!important;
+}
+@media(max-width:700px){
+  .west-experience > .west-nav{display:flex!important;right:22px!important;}
+  .west-experience > .west-horizon{padding-left:22px!important;padding-right:22px!important;}
+}
+.west-experience.west-space-sky,.west-experience.west-space-sky>section{background:#bfe3ee!important}
+.west-experience.west-space-water,.west-experience.west-space-water>section{background:#8fc9db!important}
+.west-experience.west-space-city,.west-experience.west-space-city>section{background:#78b5cf!important}
+.west-experience.west-space-horizon,.west-experience.west-space-horizon>section{background:#d4eaf0!important}
+.west-make{min-height:52svh!important;padding-top:9vh!important;padding-bottom:7vh!important}
+.west-experience > .west-horizon .west-space-question,
+.west-experience > .west-horizon .west-space-reveal,
+.west-experience > .west-horizon .west-direction{
+  margin-left:3vw;
+}
+.west-experience .west-space-field,
+.west-experience .west-window-simple .west-visual-window{
+  cursor:default!important;
+  touch-action:auto!important;
+  overscroll-behavior:auto!important;
+}
+.west-experience > .west-horizon,
+.west-experience > .west-horizon .west-space-field,
+.west-experience > .west-window-simple .west-visual-window{
+  touch-action:auto!important;
+  overscroll-behavior:auto!important;
+}
+@media(max-width:700px){
+  .west-experience > .west-horizon .west-space-question,
+  .west-experience > .west-horizon .west-space-reveal,
+  .west-experience > .west-horizon .west-direction{margin-left:0;}
+}

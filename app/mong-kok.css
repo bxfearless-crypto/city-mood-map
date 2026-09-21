@@ -5,3 +5,25 @@
 .mk-human .mk-question em{color:#d7a9ef}.mk-human .mk-saved{color:#d4a5ed}
 .mk-human{background:radial-gradient(circle at 72% 18%,rgba(255,154,204,.78),transparent 11%),radial-gradient(circle at 22% 70%,rgba(217,91,165,.62),transparent 18%),radial-gradient(circle at 82% 76%,rgba(111,86,194,.7),transparent 17%),linear-gradient(135deg,#191321 0%,#38203f 45%,#131425 100%)!important}
 .mk-human .mk-question em{color:#f0b0dc}.mk-human .mk-saved{color:#f0acd8}
+
+/* Keep the four final Mong Kok choices in a stable 2 x 2 layout. */
+.mk-human .mk-choices{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:1.2rem 3.5vw!important;
+  width:min(47vw,680px)!important;
+  align-items:stretch!important;
+}
+.mk-human .mk-choices button{
+  width:100%!important;
+  min-width:0!important;
+  margin:0!important;
+  white-space:nowrap!important;
+}
+@media(max-width:700px){
+  .mk-human .mk-choices{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    width:80vw!important;
+    gap:1rem 8vw!important;
+  }
+}

@@ -1020,9 +1020,9 @@
 /* Chrome desktop safety pass: keep the memory spreads legible inside the viewport. */
 @media (min-width:701px){
   .book-shell .book-intro h2{margin-top:9vh!important;font-size:clamp(1.35rem,3vw,3.3rem)!important;line-height:.84!important;max-width:54vw!important}
-  .book-shell .spread-central .central-word{font-size:clamp(1.4rem,2.5vw,2.4rem)!important;line-height:.78!important}
+  .book-shell .spread-central .central-word{font-size:clamp(2rem,3.5vw,3.4rem)!important;line-height:.78!important}
   .book-shell .spread-central .central-word{
-    top:3vh!important;left:18vw!important;font-size:clamp(1.4rem,2.5vw,2.4rem)!important;
+    top:3vh!important;left:18vw!important;font-size:clamp(2rem,3.5vw,3.4rem)!important;
     line-height:.78!important;max-height:none!important;overflow:visible!important;transform:none!important;
   }
   .book-shell .spread-central .central-lines{left:43%!important;right:25%!important;top:8%!important;bottom:8%!important}

@@ -529,6 +529,12 @@
   .book-shell .book-keep h2{font-size:clamp(2.2rem,5.2vw,5.8rem)!important;line-height:.78!important}
   .book-shell .book-keep>p{font-size:1rem!important;margin-top:8vh!important}
   .book-shell .book-keep>span{font-size:8px!important;margin-top:7vh!important}
+  /* Final page: a balanced five-point collage with clear breathing room. */
+  .book-shell .book-page-final .cluster-central{left:7%!important;top:8%!important;width:28%!important;height:34%!important}
+  .book-shell .book-page-final .cluster-mong{left:62%!important;top:9%!important;width:23%!important;height:25%!important}
+  .book-shell .book-page-final .cluster-sham{left:18%!important;top:52%!important;width:25%!important;height:25%!important}
+  .book-shell .book-page-final .cluster-west{left:47%!important;top:48%!important;width:24%!important;height:20%!important}
+  .book-shell .book-page-final .cluster-kennedy{left:69%!important;top:67%!important;width:25%!important;height:25%!important}
 }
 .book-shell .spread-kennedy{background:#fff;color:#26323a;}
 .book-shell .spread-kennedy .kennedy-image{z-index:1!important;}

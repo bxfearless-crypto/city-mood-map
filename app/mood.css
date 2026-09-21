@@ -551,12 +551,13 @@
 
   /* Chrome-safe final page frame: keep the complete composition inside the viewport. */
   .book-shell .book-page-final .book-final-postcard{position:relative!important;display:block!important;width:100%!important;height:100%!important;min-height:0!important;padding:0!important;overflow:hidden!important}
+  .book-shell .book-page-final{transform:none!important;opacity:1!important;animation:none!important}
   .book-shell .book-page-final .final-result-header{position:absolute!important;z-index:10!important;left:5vw!important;top:4vh!important;width:min(34vw,390px)!important;max-width:390px!important;margin:0!important;text-align:left!important}
   .book-shell .book-page-final .final-result-header h1{font-size:clamp(1.3rem,2.2vw,2.2rem)!important}
   .book-shell .book-page-final .final-result-sentence{font-size:clamp(11px,1vw,14px)!important;margin:.55rem 0!important}
   .book-shell .book-page-final .final-result-conclusion{display:none!important}
   .book-shell .book-page-final .final-result-meta{font-size:7px!important}
-  .book-shell .book-page-final .final-collage-field{position:absolute!important;left:44vw!important;right:5vw!important;top:20vh!important;bottom:15vh!important;width:auto!important;height:auto!important;min-height:0!important;padding:0!important}
+  .book-shell .book-page-final .final-collage-field{position:absolute!important;left:36vw!important;right:5vw!important;top:20vh!important;bottom:15vh!important;width:auto!important;height:auto!important;min-height:0!important;padding:0!important}
   .book-shell .book-page-final .final-choice-summary{position:absolute!important;left:5vw!important;right:5vw!important;bottom:3vh!important;margin:0!important;text-align:left!important}
 }
 .book-shell .spread-kennedy{background:#fff;color:#26323a;}

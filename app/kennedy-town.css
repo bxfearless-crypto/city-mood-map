@@ -145,6 +145,11 @@ html:has(.kt-experience),body:has(.kt-experience){overflow-x:hidden;overflow-y:s
 .kt-catch-section .kt-light-moment small{z-index:6;color:#fff!important;text-shadow:0 1px 8px rgba(50,34,32,.7)}
 .kt-catch-section .kt-light-moment small{top:calc(100% + 4px)}
 
+/* Keep the section 02 image focused instead of spanning the full Chrome viewport. */
+@media (min-width:701px){
+  .kt-catch-section .kt-light-scene{width:min(78vw,1180px)!important;margin-left:auto!important;margin-right:auto!important}
+}
+
 /* Final Chrome desktop pass for Kennedy Town section 03: four readable memory zones, no text pile-up. */
 @media (min-width:701px){
   .kt-memory-section{min-height:128svh!important;padding:8vh 7vw 10vh!important}

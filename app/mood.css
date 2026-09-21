@@ -530,10 +530,10 @@
   .book-shell .book-keep>p{font-size:1rem!important;margin-top:8vh!important}
   .book-shell .book-keep>span{font-size:8px!important;margin-top:7vh!important}
   /* Final page: a balanced five-point collage with clear breathing room. */
-  .book-shell .book-page-final .cluster-central{left:7%!important;top:8%!important;width:21%!important;height:27%!important}
-  .book-shell .book-page-final .cluster-mong{left:64%!important;top:9%!important;width:18%!important;height:20%!important}
-  .book-shell .book-page-final .cluster-sham{left:16%!important;top:50%!important;width:32%!important;height:31%!important}
-  .book-shell .book-page-final .cluster-west{left:44%!important;top:45%!important;width:31%!important;height:27%!important}
+  .book-shell .book-page-final .cluster-central{left:9%!important;top:10%!important;width:16%!important;height:21%!important}
+  .book-shell .book-page-final .cluster-mong{left:67%!important;top:11%!important;width:14%!important;height:16%!important}
+  .book-shell .book-page-final .cluster-sham{left:13%!important;top:48%!important;width:40%!important;height:36%!important}
+  .book-shell .book-page-final .cluster-west{left:40%!important;top:43%!important;width:38%!important;height:32%!important}
   .book-shell .book-page-final .cluster-kennedy{left:69%!important;top:67%!important;width:25%!important;height:25%!important}
 }
 .book-shell .spread-kennedy{background:#fff;color:#26323a;}

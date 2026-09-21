@@ -149,6 +149,7 @@ html:has(.kt-experience),body:has(.kt-experience){overflow-x:hidden;overflow-y:s
 @media (min-width:701px){
   .kt-experience .kt-catch-section .kt-light-scene{width:min(62vw,900px)!important;max-width:900px!important;margin-left:auto!important;margin-right:auto!important}
   .kt-experience .kt-catch-section .kt-scene-buildings{
+    display:none!important;
     inset:18% 12% 30% 12%!important;
     clip-path:none!important;
     opacity:.62!important;

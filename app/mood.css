@@ -533,9 +533,9 @@
   .book-shell .book-keep>span{font-size:8px!important;margin-top:7vh!important}
   /* Final page: a balanced five-point collage with clear breathing room. */
   .book-shell .book-page-final .cluster-central{left:9%!important;top:10%!important;width:16%!important;height:21%!important}
-  .book-shell .book-page-final .cluster-mong{left:67%!important;top:11%!important;width:14%!important;height:16%!important}
-  .book-shell .book-page-final .cluster-sham{left:0!important;top:27%!important;width:82%!important;height:70%!important}
-  .book-shell .book-page-final .cluster-sham .map-artwork img{transform:scale(2)!important}
+  .book-shell .book-page-final .cluster-mong{left:67%!important;top:3%!important;width:14%!important;height:16%!important}
+  .book-shell .book-page-final .cluster-sham{left:5%!important;top:39%!important;width:65%!important;height:55%!important}
+  .book-shell .book-page-final .cluster-sham .map-artwork img{transform:scale(1.35)!important}
   .book-shell .book-page-final .cluster-west{left:19%!important;top:31%!important;width:75%!important;height:62%!important}
   .book-shell .book-page-final .cluster-west .map-artwork img{transform:scale(1.92)!important}
   .book-shell .book-page-final .cluster-kennedy{left:78%!important;top:54%!important;width:25%!important;height:25%!important}

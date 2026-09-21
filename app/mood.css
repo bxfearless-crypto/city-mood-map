@@ -526,6 +526,9 @@
 @media (min-width:701px){
   .book-shell .spread-sham .sham-note{left:52%!important;top:54%!important;bottom:auto!important;max-width:22ch!important}
   .book-shell .spread-sham .sham-fragment-small{left:8%!important;right:auto!important;top:68%!important;bottom:auto!important}
+  .book-shell .book-keep h2{font-size:clamp(2.2rem,5.2vw,5.8rem)!important;line-height:.78!important}
+  .book-shell .book-keep>p{font-size:1rem!important;margin-top:8vh!important}
+  .book-shell .book-keep>span{font-size:8px!important;margin-top:7vh!important}
 }
 .book-shell .spread-kennedy{background:#fff;color:#26323a;}
 .book-shell .spread-kennedy .kennedy-image{z-index:1!important;}

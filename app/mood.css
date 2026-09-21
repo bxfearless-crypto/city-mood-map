@@ -524,7 +524,7 @@
 
 /* SSP page 05: separate the side label from the passing-through note. */
 @media (min-width:701px){
-  .book-shell .spread-sham .sham-note{left:8%!important;top:50%!important;bottom:auto!important;max-width:30ch!important}
+  .book-shell .spread-sham .sham-note{left:52%!important;top:54%!important;bottom:auto!important;max-width:22ch!important}
   .book-shell .spread-sham .sham-fragment-small{left:8%!important;right:auto!important;top:68%!important;bottom:auto!important}
 }
 .book-shell .spread-kennedy{background:#fff;color:#26323a;}

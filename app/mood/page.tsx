@@ -123,7 +123,9 @@ export default function MoodPage() {
     const westMood = JSON.parse(read('west-kowloon-mood') || '{}');
     const westObservation = JSON.parse(read('west-kowloon-observation') || '{}');
     const kennedy = JSON.parse(read('kennedy-town-mood') || '{}');
-    const westChoice = westObservation.observation || ({ CREATE: 'POSSIBILITY', WANDER: 'DISTANCE', OBSERVE: 'FORM', REST: 'LIGHT' } as Record<string, string>)[westMood.response] || 'DISTANCE';
+    // The explicit make-space choice is the user's final West Kowloon choice.
+    // The observation is only an intermediate interaction and must not mask it.
+    const westChoice = ({ CREATE: 'POSSIBILITY', WANDER: 'DISTANCE', OBSERVE: 'FORM', REST: 'LIGHT' } as Record<string, string>)[westMood.response] || westObservation.observation || 'DISTANCE';
     setChoices({
       central: read('central-mood-choice') || 'slow',
       mong: normalizeMongKokChoice(read('mong-kok-mood')),

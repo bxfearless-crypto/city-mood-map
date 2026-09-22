@@ -115,6 +115,7 @@ export default function MoodPage() {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState<'next' | 'prev'>('next');
   const [dragX, setDragX] = useState<number | null>(null);
+  const [westLabel, setWestLabel] = useState('DISTANCE');
   const [choices, setChoices] = useState({ central: 'slow', mong: 'details', sham: 'memory', west: 'distance', kennedy: 'sea' });
   const dragStart = useRef<number | null>(null);
 
@@ -126,6 +127,7 @@ export default function MoodPage() {
     // The explicit make-space choice is the user's final West Kowloon choice.
     // The observation is only an intermediate interaction and must not mask it.
     const westChoice = ({ CREATE: 'POSSIBILITY', WANDER: 'DISTANCE', OBSERVE: 'FORM', REST: 'LIGHT' } as Record<string, string>)[westMood.response] || westObservation.observation || 'DISTANCE';
+    setWestLabel(westMood.response || westObservation.observation || 'DISTANCE');
     setChoices({
       central: read('central-mood-choice') || 'slow',
       mong: normalizeMongKokChoice(read('mong-kok-mood')),
@@ -175,7 +177,7 @@ export default function MoodPage() {
         {current === 'west' && <WestKowloonMemorySpread choice={choices.west} />}
         {current === 'kennedy' && <KennedyTownMemorySpread choice={choices.kennedy} />}
         {current === 'keep' && <div className="book-keep"><p className="book-kicker">08 / AFTER THE CITY</p><h2>SO WHAT<br />DID YOU KEEP?</h2><p>Five places left five traces.</p><span>TURN THE LAST PAGE →</span></div>}
-        {current === 'final' && <FinalPostcardCanvas centralChoice={PREVIEW_CENTRAL_KEEP_MOVING ? 'moving' : choices.central} mongChoice={PREVIEW_MONG_ENERGY ? 'energy' : PREVIEW_MONG_PEOPLE ? 'people' : PREVIEW_MONG_NOISE ? 'noise' : PREVIEW_MONG_DETAILS ? 'details' : choices.mong} shamChoice={PREVIEW_SHAM_OBJECTS ? 'objects' : PREVIEW_SHAM_PEOPLE ? 'people' : PREVIEW_SHAM_IMPERFECTION ? 'imperfection' : PREVIEW_SHAM_MEMORY ? 'memory' : choices.sham} westChoice={PREVIEW_WEST_FORM ? 'form' : PREVIEW_WEST_LIGHT ? 'light' : PREVIEW_WEST_DISTANCE ? 'distance' : PREVIEW_WEST_POSSIBILITY ? 'possibility' : choices.west} kennedyChoice={choices.kennedy} />}
+        {current === 'final' && <FinalPostcardCanvas centralChoice={PREVIEW_CENTRAL_KEEP_MOVING ? 'moving' : choices.central} mongChoice={PREVIEW_MONG_ENERGY ? 'energy' : PREVIEW_MONG_PEOPLE ? 'people' : PREVIEW_MONG_NOISE ? 'noise' : PREVIEW_MONG_DETAILS ? 'details' : choices.mong} shamChoice={PREVIEW_SHAM_OBJECTS ? 'objects' : PREVIEW_SHAM_PEOPLE ? 'people' : PREVIEW_SHAM_IMPERFECTION ? 'imperfection' : PREVIEW_SHAM_MEMORY ? 'memory' : choices.sham} westChoice={PREVIEW_WEST_FORM ? 'form' : PREVIEW_WEST_LIGHT ? 'light' : PREVIEW_WEST_DISTANCE ? 'distance' : PREVIEW_WEST_POSSIBILITY ? 'possibility' : choices.west} westLabel={westLabel} kennedyChoice={choices.kennedy} />}
       </section>
       <button className="book-edge book-edge-left" aria-label="Previous page" onClick={() => turn(-1)} />
       <button className="book-edge book-edge-right" aria-label="Next page" onClick={() => turn(1)} />
@@ -187,7 +189,7 @@ export default function MoodPage() {
   );
 }
 
-function FinalPostcardCanvas({ centralChoice, mongChoice, shamChoice, westChoice, kennedyChoice }: { centralChoice: string; mongChoice: string; shamChoice: string; westChoice: string; kennedyChoice: string }) {
+function FinalPostcardCanvas({ centralChoice, mongChoice, shamChoice, westChoice, westLabel, kennedyChoice }: { centralChoice: string; mongChoice: string; shamChoice: string; westChoice: string; westLabel: string; kennedyChoice: string }) {
   // These are large RGBA illustrations. Keep repeated visits from eagerly
   // scheduling every selected surface at once; this does not affect layout or
   // the artwork once it enters the visible postcard canvas.
@@ -195,7 +197,7 @@ function FinalPostcardCanvas({ centralChoice, mongChoice, shamChoice, westChoice
   const kennedyImage = kennedyChoice === 'light' ? '/postcard/kennedy-town-light.png' : kennedyChoice === 'sea' ? '/postcard/kennedy-town-sea.png' : kennedyChoice === 'silence' ? '/postcard/kennedy-town-silence.png' : '/postcard/kennedy-town-feeling.png';
   const result = getResultProfile({ central: centralChoice, mong: mongChoice, sham: shamChoice, west: westChoice, kennedy: kennedyChoice });
   const resultKey = getResultKey({ central: centralChoice, mong: mongChoice, sham: shamChoice, west: westChoice, kennedy: kennedyChoice });
-  const summary = [centralChoice === 'moving' ? 'KEEP MOVING' : 'SLOW DOWN', mongChoice.toUpperCase(), shamChoice.toUpperCase(), westChoice.toUpperCase(), kennedyChoice === 'light' ? 'LIGHT' : kennedyChoice === 'silence' ? 'SILENCE' : kennedyChoice === 'feeling' ? 'FEELING' : 'SEA'];
+  const summary = [centralChoice === 'moving' ? 'KEEP MOVING' : 'SLOW DOWN', mongChoice.toUpperCase(), shamChoice.toUpperCase(), westLabel.toUpperCase(), kennedyChoice === 'light' ? 'LIGHT' : kennedyChoice === 'silence' ? 'SILENCE' : kennedyChoice === 'feeling' ? 'FEELING' : 'SEA'];
   return <div className={`book-final book-final-postcard result-${resultKey} postcard-central-${centralChoice} postcard-mong-${mongChoice} postcard-sham-${shamChoice} postcard-west-${westChoice} postcard-kennedy-${kennedyChoice}`}>
     <header className="final-result-header"><p className="final-result-kicker">YOUR HONG KONG</p><h1>{result.title}</h1><p className="final-result-sentence">{result.sentence}</p><div className="final-result-conclusion"><p className="final-result-conclusion-label">YOUR HONG KONG IS</p><p className="final-result-conclusion-title">{result.conclusionLead.replace(/^YOUR HONG KONG IS\s*/, '')}</p><p className="final-result-conclusion-body">{result.conclusion}</p></div><p className="final-result-meta">512 POSSIBLE COMBINATIONS&nbsp;&nbsp;&nbsp; 8 RESULT TYPES</p></header>
     <div className="final-map-field final-collage-field" aria-label="Personal Hong Kong collage">

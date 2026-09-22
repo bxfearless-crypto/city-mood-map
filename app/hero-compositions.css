@@ -129,7 +129,7 @@
   top: 22vh;
   width: min(42vw, 470px);
   height: 47vh;
-  background: linear-gradient(rgba(238,228,210,.08),rgba(238,228,210,.08)), url('/sham-shui-po-found-material.png') center/cover;
+  background: linear-gradient(rgba(238,228,210,.08),rgba(238,228,210,.08)), url('/optimized/sham-shui-po-found-material.jpg') center/cover;
   filter: sepia(.18) saturate(.7) contrast(.92);
   box-shadow: 14px 18px 0 rgba(84,67,49,.14), 0 22px 35px rgba(84,67,49,.17);
   transform: rotate(-5deg);

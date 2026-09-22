@@ -9,9 +9,9 @@ const fragmentPositions = ['3% 7%', '16% 88%', '29% 21%', '44% 78%', '57% 4%', '
 const bottomFragments = ['LAST TRAIN', 'STILL ONLINE', '09:58', 'NO BREAK', 'SEND IT', 'KEEP WALKING', 'OUT OF OFFICE?', 'ONE LAST CALL'];
 const midFragments = ['09:17', 'INBOX 47', 'CAN YOU HEAR ME?', 'RUNNING BETWEEN FLOORS', 'NO TIME TO THINK', 'KEEP THE PACE', 'MISSED CALL', 'TAB 06 OPEN', 'WHERE ARE YOU?', 'DECK 31', 'REPLY ASAP', 'STILL IN TRANSIT', 'MEETING MOVED', 'DO NOT DISTURB'];
 const detailFrames = Array.from({ length: 10 }, (_, index) => `/central-detail-${String(index + 1).padStart(2, '0')}.png`);
-const commuteFrames = ['/central-commute-04.png', '/central-commute-05.png', '/central-commute-06.png', '/central-commute-07.png'];
-const pressureFrames = ['/central-pressure-1.png', '/central-pressure-2.png', '/central-pressure-3.png'];
-const allCentralImages = ['/central-arrival.png', '/central-acceleration.png', '/central-pause.png', '/central-glass.png', '/central-vertical-movement.png', '/central-atrium.png', ...detailFrames, ...commuteFrames, ...pressureFrames];
+const commuteFrames = ['/optimized/central-commute-04.jpg', '/optimized/central-commute-05.jpg', '/optimized/central-commute-06.jpg', '/optimized/central-commute-07.jpg'];
+const pressureFrames = ['/optimized/central-pressure-1.jpg', '/optimized/central-pressure-2.jpg', '/optimized/central-pressure-3.jpg'];
+const allCentralImages = ['/optimized/central-arrival.jpg', '/optimized/central-acceleration.jpg', '/optimized/central-pause.jpg', '/optimized/central-glass.jpg', '/optimized/central-vertical-movement.jpg', '/optimized/central-atrium.jpg', ...detailFrames, ...commuteFrames, ...pressureFrames];
 
 export default function CentralPage() {
   const params = useParams<{ slug: string }>();

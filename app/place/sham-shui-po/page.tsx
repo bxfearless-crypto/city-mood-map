@@ -3,11 +3,11 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 
 const fragments = [
-  ['/sham-shui-po-shutter.png','OBJECT 03','Someone repaired this\ninstead of replacing it.'],
-  ['/sham-shui-po-market.png','TEXTURE 07','A city can feel old\nwithout feeling finished.'],
-  ['/sham-shui-po-electronics.png','FOUND / SSP','Small shops remember\nwhat towers forget.'],
-  ['/sham-shui-po-stairs.png','ARCHIVE / 03','The handrail keeps\nthe shape of every hand.'],
-  ['/sham-shui-po-window.png','MATERIAL 11','Morning enters\nthrough what remains.'],
+  ['/optimized/sham-shui-po-shutter.jpg','OBJECT 03','Someone repaired this\ninstead of replacing it.'],
+  ['/optimized/sham-shui-po-market.jpg','TEXTURE 07','A city can feel old\nwithout feeling finished.'],
+  ['/optimized/sham-shui-po-electronics.jpg','FOUND / SSP','Small shops remember\nwhat towers forget.'],
+  ['/optimized/sham-shui-po-stairs.jpg','ARCHIVE / 03','The handrail keeps\nthe shape of every hand.'],
+  ['/optimized/sham-shui-po-window.jpg','MATERIAL 11','Morning enters\nthrough what remains.'],
 ];
 type Memory = 'objects'|'people'|'imperfection'|'memory';
 
